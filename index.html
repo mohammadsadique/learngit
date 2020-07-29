@@ -1,83 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/custom.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/custom.css" />
     <title>Learn Git And Github</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-        <a class="navbar-brand" href="www.celisoftware.com"><img src="image/celisoftware.png" alt="celisoftware" class="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="container">
+        <a class="navbar-brand" href="www.celisoftware.com"
+          ><img src="image/celisoftware.png" alt="celisoftware" class="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarColor02"
+          aria-controls="navbarColor02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarColor02">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">GIT <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#"
+                >GIT <span class="sr-only">(current)</span></a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">GITHUB</a>
             </li>
           </ul>
           <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+              Search
+            </button>
           </form>
         </div>
+      </div>
+    </nav>
+
+    <div class="container" style="margin-top: 80px;">
+      <h2>GIT DOCUMENT <span class="badge badge-secondary">New</span></h2>
+      <div class="media">
+        <div class="media-body">
+          <h5 class="mt-0">Simpliest way to learn Git</h5>
+          Instaul Git
+          <a href="https://git-scm.com/downloads" target="_blank"
+            >Git Download</a
+          >
+          After instaulling Git: left click on mouse and you saw two option
+          <span class="badge badge-secondary">Git GUI Here</span>
+          <span class="badge badge-secondary">Git Bash Here</span>. click on
+          `Git Bash Here` to open terminal and check version of Git.
+          <div class="alert alert-dark">
+            <strong>Check Git Version</strong>
+            <p>git --version</p>
+          </div>
         </div>
-      </nav>
-    
-    <div class="container" style="margin-top:80px">
-        <h2>GIT DOCUMENT <span class="badge badge-secondary">New</span></h2>
-        <div class="media">
-            <div class="media-body">
-              <h5 class="mt-0">Simpliest way to learn Git</h5>
-                Instaul Git <a href="https://git-scm.com/downloads" target="_blank">Git Download</a>
-                After instaulling Git: left click on mouse and you saw two option <span class="badge badge-secondary">Git GUI Here</span> <span class="badge badge-secondary">Git Bash Here</span>.
-                click on `Git Bash Here` to open terminal and check version of Git.
-                <div class="alert alert-dark">
-                    <strong>Check Git Version</strong> 
-                    <p> git --version </p>
-                </div>    
-            </div>
+      </div>
+      <div class="media">
+        <div class="media-body">
+          <h5 class="mt-0">For The First Time</h5>
+          It is important step to add your name and email it define your work.
+          Use your identity for specific project or global project.
+          <div class="alert alert-dark">
+            <strong>Add Your Name</strong>
+            <p>git config user.name `yourname` ( Specific Project )</p>
+            <p>git config --global user.name `yourname` ( Every Project )</p>
+          </div>
+          <div class="alert alert-dark">
+            <strong>Add Your Email</strong>
+            <p>
+              git config user.email `example@example.com` ( Specific Project )
+            </p>
+            <p>
+              git config --global user.email `example@example.com` ( Every
+              Project )
+            </p>
+          </div>
         </div>
-        <div class="media">
-            <div class="media-body">
-                <h5 class="mt-0">For The First Time</h5>
-                  It is important step to add your name and email it define your work. Use your identity for specific project or global project.
-                  <div class="alert alert-dark">
-                      <strong>Add Your Name</strong> 
-                      <p> git config user.name `yourname` ( Specific Project )</p>
-                        <p> git config --global user.name `yourname` ( Every Project )</p>
-                  </div>    
-                  <div class="alert alert-dark">
-                    <strong>Add Your Email</strong> 
-                    <p> git config user.email `example@example.com` ( Specific Project )</p>
-                    <p> git config --global user.email `example@example.com` ( Every Project )</p>
-                </div>    
-            </div>
+      </div>
+      <div class="media">
+        <div class="media-body">
+          <h5 class="mt-0">Initialize Git</h5>
+          We Initialize git repository from the project folder location.
+          <div class="alert alert-dark">
+            <strong>Initialize git</strong>
+            <p>git init</p>
+          </div>
         </div>
-        <div class="media">
-            <div class="media-body">
-                <h5 class="mt-0">Git Use 4 Step</h5>
-                <p>Untract File (Initialize)</p>
-                <p>Staged Area</p>
-                <p>Commit</p>
-                <p>Status</p>    
-            </div>
+      </div>
+      <div class="media">
+        <div class="media-body">
+          <h5 class="mt-0">Git Use 4 Step</h5>
+          <p>1. Untracked File (Initialize)</p>
+          <p>2. Staged Area</p>
+          <p>3. Commit Files</p>
+          <p>4. Status</p>
         </div>
+      </div>
+      <div class="media">
+        <div class="media-body">
+          <h5 class="mt-0">1. Untracked File</h5>
+          when I create new file (like .php) git called it Untracked File. For checking Untracked File use `git status` command. It show's files in red color.
+          <div class="alert alert-dark">
+            <strong>Untracked File</strong>
+            <p>git status</p>
+          </div>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-body">
+          <h5 class="mt-0">2. Staged Area</h5>
+          After creating file, we need to add those file in stagging area. Git store files in staged area and it show's green color files name.
+          <div class="alert alert-dark">
+            <strong>Staged Area</strong>
+            <p><span class="badge badge-secondary">git add index.html</span> (For Single Page)</p>
+            <p><span class="badge badge-secondary">git add -A</span> (For all pages)</p>
+            <strong>Other Ways</strong>
+            <p><span class="badge badge-secondary">git add .</span> (Staged new and modified files without deleting files)</p>
+            <p><span class="badge badge-secondary">git add -u</span> (Staged modified and delete files without new files)</p>
+          </div>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-body">
+          <h5 class="mt-0">3. Commit Files</h5>
+          When your work is completed or you want to save on current situation so commit your code. It store your code if some how your code get mesh or file delete or any other reason lose file if you commit code then you can get those files.So, for storing your work use commit. 
+          <div class="alert alert-dark">
+            <strong>Commit Files</strong>
+            <p><span class="badge badge-secondary">git commit</span> </p>
+           <p>It open screen for type comment using i button on keyboard </p>
+           <p>For exit from open screen press Esc + : + w + q and enter</p>
+           <p>Esc : w q , Esc : W Q both work.</p>
+            <p><span class="badge badge-secondary">git commit -m "Write message here"</span></p>
+            <p><span class="badge badge-secondary">git commit -a -m "Write message here"</span></p>            
+          </div>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-body">
+          <h5 class="mt-0">4. Status</h5>
+          Status is repeating it is actual 3 step but for beginner it is important to know step by step process. It basically tells the current situation of the files and folders.
+          <div class="alert alert-dark">
+            <strong>Status</strong>
+            <p><span class="badge badge-secondary">git status</span> </p>                
+          </div>
+        </div>
+      </div>
     </div>
-      
-    
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
